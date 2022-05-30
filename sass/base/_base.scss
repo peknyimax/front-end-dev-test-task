@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*:after {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--font-stack);
+    box-sizing: border-box;
+    font-size: var(--font-default);
+    background-color: var(--color-bg-primary);
+}

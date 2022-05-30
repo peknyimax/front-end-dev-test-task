@@ -1,0 +1,50 @@
+.heading-primary {
+    font-size: var(--font-default);
+    line-height: 1.6rem;
+    font-weight: 300;
+    color: var(--color-primary);
+}
+
+.heading-secondary {
+    font-size: var(--font-big);
+    font-weight: var(--font-weight-lighter);
+    color: var(--color-primary);
+    line-height: 3.1rem;
+}
+
+.heading-tertiary {
+    font-weight: var(--font-weight-lighter);
+    font-size: var(--font-default);
+    color: var(--color-primary);
+    line-height: 1.8rem;
+}
+
+.secure-payment {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    &__icon {
+        flex-shrink: 0;
+        width: 2.2rem;
+        height: 2.6rem;
+        background-image: url(../img/secure.svg);
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
+    &__check {
+        width: 1.2rem;
+        height: 1.2rem;
+        transform: scale(1.1);
+        position: absolute;
+        bottom: 0;
+        right: 1.5px;
+    }
+
+    &__text {
+        font-weight: var(--font-weight-lighter);
+        font-size: 1.4rem;
+        color: var(--color-grey-darker);
+    }
+}

@@ -1,0 +1,28 @@
+.btn {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    font-family: inherit;
+
+    &--shipping,
+    &--billing,
+    &--pay {
+        border-radius: var(--border-radius-default);
+        width: 18rem;
+        padding-block: 1.3rem;
+        // padding-inline: 5.65rem;
+        background-color: var(--color-primary-opc8);
+        color: var(--color-white);
+
+        font-family: inherit;
+        font-size: var(--font-default);
+        font-weight: var(--font-weight-default);
+    }
+
+    &--same-as-shipping {
+        display: inline-block;
+        font-size: var(--font-small);
+        text-decoration: underline;
+        color: var(--color-primary);
+    }
+}

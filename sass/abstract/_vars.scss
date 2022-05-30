@@ -1,0 +1,61 @@
+:root {
+    // – COLOR
+
+    --gradient-main: linear-gradient(
+        to right,
+        var(--color-primary),
+        var(--color-secondary-red),
+        var(--color-secondary-pink)
+    );
+
+    --color-bg-primary: #e6e9f0;
+    --color-bg-secondary: #f8f9fb;
+    --color-bg-product-img: #f3f3f3;
+
+    --color-primary-opc8: #5a1094cc;
+    --color-primary: #5a1094;
+    --color-primary-dark: #431c5d;
+
+    --color-secondary-red: #ff1876;
+    --color-secondary-pink: #c90ea5;
+
+    --color-grey-lightest: #dedcdc;
+    --color-grey-lighter: #979797;
+    --color-grey-default: #777879;
+    --color-grey-darker: #6b6b6b;
+    --color-grey-darkest: #2b2525;
+
+    --color-white: #fff;
+
+    // – FONT
+
+    --font-stack: 'Helvetica Neue', sans-serif;
+
+    --font-big: 2.6rem;
+
+    --font-default: 1.6rem;
+    --font-bigger: 1.3rem;
+    --font-small: 1.2rem;
+    --font-smaller: 1rem;
+    --font-smallest: 0.9rem;
+
+    // – FONT WEIGHT
+
+    --font-weight-boldest: 700;
+    --font-weight-bolder: 500;
+    --font-weight-default: 400;
+    --font-weight-lighter: 300;
+
+    // – SHADOW
+
+    --shadow-light: 0 2px 18px rgba(0, 0, 0, 0.07);
+
+    // – BORDER
+
+    --border-light: 1px solid var(--color-grey-lightest);
+    --border-lighter: 1px solid #e3e3e3;
+
+    // – BORDER RADIUS
+
+    --border-radius-default: 5px;
+}

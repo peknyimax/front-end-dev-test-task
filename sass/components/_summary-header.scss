@@ -1,0 +1,9 @@
+.summary-header {
+    padding-inline: 0.6rem 1px;
+
+    &__link:link,
+    &__link:visited {
+        font-size: var(--font-small);
+        color: var(--color-grey-lighter);
+    }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "front-end-dev-test-task",
+  "version": "1.0.0",
+  "description": "Test Task fro hexlet",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "sass --watch sass/index.scss css/style.css"
+  },
+  "author": "peknyimax",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.52.1"
+  }
+}

@@ -1,0 +1,31 @@
+.flex-box {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.-active {
+    display: block !important;
+    // opacity: 1 !important;
+    // visibility: visible !important;
+}
+
+.u-mr-5 {
+    margin-right: 0.5rem;
+}
+.u-ml-10 {
+    margin-left: 1rem;
+}
+
+.u-mb-10 {
+    margin-bottom: 1rem;
+}
+.u-mb-15 {
+    margin-bottom: 1.5rem;
+}
+.u-mb-20 {
+    margin-bottom: 2rem;
+}
+.u-mb-30 {
+    margin-bottom: 3rem;
+}

@@ -1,0 +1,14 @@
+.subtotal {
+    padding-bottom: 1rem;
+    font-size: var(--font-small);
+    color: var(--color-grey-default);
+    border-bottom: var(--border-lighter);
+
+    display: grid;
+    grid-template-columns: 1fr 20%;
+    row-gap: 0.9rem;
+
+    &__price {
+        justify-self: end;
+    }
+}

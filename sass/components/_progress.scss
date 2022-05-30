@@ -1,0 +1,36 @@
+.progress {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+
+    &__btn {
+        background: none;
+        border: none;
+        font-family: inherit;
+        font-size: var(--font-small);
+        font-weight: var(--font-weight-default);
+        color: var(--color-grey-lighter);
+        opacity: 80%;
+        // border-bottom: 1px solid transparent;
+        cursor: pointer;
+
+        &--active {
+            color: var(--color-primary);
+            opacity: 100%;
+        }
+
+        &--completed {
+            color: var(--color-grey-lighter);
+            // border-bottom: 1px solid currentColor;
+            text-decoration: underline;
+            opacity: 80%;
+        }
+    }
+
+    &__icon {
+        width: 1.2rem;
+        height: 2.2rem;
+        stroke: var(--color-grey-lighter);
+        opacity: 30%;
+    }
+}

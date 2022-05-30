@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Front-end Developer Test Task</title>
+    </head>
+
+    <body>
+        <!-- • Header -->
+        <header class="header">
+            <div class="header__content">
+                <div class="header__icon">&nbsp;</div>
+
+                <h1 class="heading-primary">Front-end Developer Test Task</h1>
+
+                <a
+                    href="#"
+                    class="header__cart-box header__cart-link"
+                    id="link-cart"
+                >
+                    cart
+                    <span class="header__cart-icon">
+                        &nbsp;
+                        <span class="header__cart-label">3</span>
+                    </span>
+                </a>
+
+                <!-- <div class="header__cart-box">
+                    <a href="#" class="header__cart-link">cart</a>
+                    <div class="header__cart-icon">
+                        &nbsp;
+                        <span class="header__cart-label">3</span>
+                    </div>
+                </div> -->
+            </div>
+        </header>
+
+        <!-- • Main -->
+        <main class="main">
+            <!-- • Forms -->
+            <section class="section-left">
+                <!-- – Progress -->
+                <div class="progress u-mb-20">
+                    <button
+                        id="btn--progress-shipping"
+                        class="progress__btn progress__btn--active"
+                    >
+                        Shipping
+                    </button>
+                    <svg class="progress__icon">
+                        <use href="img/sprite.svg#icon-chevron-right"></use>
+                    </svg>
+                    <button id="btn--progress-billing" class="progress__btn">
+                        Billing
+                    </button>
+                    <svg class="progress__icon">
+                        <use href="img/sprite.svg#icon-chevron-right"></use>
+                    </svg>
+                    <button id="btn--progress-payment" class="progress__btn">
+                        Payment
+                    </button>
+                </div>
+
+                <!-- • Shipping Form -->
+                <div class="form-box form-box--shipping -active">
+                    <h2 class="heading-secondary u-mb-20">Shipping Info</h2>
+                    <!-- – Recipient Shipping -->
+                    <form class="form u-mb-30" action="">
+                        <label class="form__label" for="name--shipping"
+                            >Recipient</label
+                        >
+                        <input
+                            class="form__input form__input--name u-mb-10"
+                            id="name--shipping"
+                            type="text"
+                            placeholder="Full Name"
+                        />
+                        <input
+                            class="form__input form__input--tel"
+                            id="tel--shipping"
+                            type="text"
+                            placeholder="Daytime Phone"
+                        />
+                        <span class="form__note"
+                            >For delivery questions only</span
+                        >
+                    </form>
+
+                    <!-- – Adress Shippig -->
+                    <div class="form u-mb-20">
+                        <label for="street--shipping" class="form__label"
+                            >Address</label
+                        >
+                        <input
+                            class="form__input form__input--street u-mb-10"
+                            id="street--shipping"
+                            type="text"
+                            placeholder="Street Address"
+                        />
+                        <input
+                            class="form__input form__input--apt u-mb-20"
+                            id="apt--shipping"
+                            type="text"
+                            placeholder="Apt, Suite, Bldg, Gate Code. (optional)"
+                        />
+                        <input
+                            class="form__input form__input--city u-mb-20"
+                            id="city--shipping"
+                            type="text"
+                            placeholder="City"
+                        />
+                        <input
+                            class="form__input form__input--country"
+                            id="country--shipping"
+                            type="text"
+                            placeholder="Country"
+                        />
+                        <input
+                            class="form__input form__input--zip"
+                            id="zip--shipping"
+                            type="text"
+                            placeholder="ZIP"
+                        />
+                    </div>
+
+                    <!-- – Button Shipping -->
+                    <button
+                        class="btn btn--shipping"
+                        id="btn--continue-shipping"
+                    >
+                        Continue
+                    </button>
+                </div>
+
+                <!-- • Billing Form -->
+                <div class="form-box form-box--billing">
+                    <div class="flex-box u-mb-20">
+                        <h2 class="heading-secondary">Billing Information</h2>
+                        <button
+                            class="btn btn--same-as-shipping"
+                            id="btn--same"
+                        >
+                            Same as shipping
+                        </button>
+                    </div>
+                    <!-- – Recipient Billing -->
+                    <form class="form u-mb-30" action="">
+                        <label class="form__label" for="name--billing"
+                            >Billing Contact</label
+                        >
+                        <input
+                            class="form__input form__input--name u-mb-10"
+                            id="name--billing"
+                            type="text"
+                            placeholder="Full Name"
+                        />
+                        <input
+                            class="form__input form__input--mail"
+                            id="tel--billing"
+                            type="email"
+                            placeholder="Email Address"
+                        />
+                    </form>
+
+                    <!-- – Adress Billing -->
+                    <div class="form u-mb-20">
+                        <label for="street--billing" class="form__label"
+                            >Billing Address</label
+                        >
+                        <input
+                            class="form__input form__input--street u-mb-10"
+                            id="street--billing"
+                            type="text"
+                            placeholder="Street Address"
+                        />
+                        <input
+                            class="form__input form__input--apt u-mb-20"
+                            id="apt--billing"
+                            type="text"
+                            placeholder="Apt, Suite, Bldg, Gate Code. (optional)"
+                        />
+                        <input
+                            class="form__input form__input--city u-mb-20"
+                            id="city--billing"
+                            type="text"
+                            placeholder="City"
+                        />
+                        <input
+                            class="form__input form__input--country"
+                            id="country--billing"
+                            type="text"
+                            placeholder="Country"
+                        />
+                        <input
+                            class="form__input form__input--zip"
+                            id="zip--billing"
+                            type="text"
+                            placeholder="ZIP"
+                        />
+                    </div>
+
+                    <!-- – Button Billling -->
+                    <button class="btn btn--billing" id="btn--continue-billing">
+                        Continue
+                    </button>
+                </div>
+
+                <!-- • Payment Form -->
+                <div class="form-box form-box--payment">
+                    <h2 class="heading-secondary u-mb-15">Payment</h2>
+                    <div class="secure-payment u-mb-20">
+                        <div class="secure-payment__icon">
+                            <svg class="secure-payment__check">
+                                <use
+                                    href="img/secure-check.svg#icon-secure-yes"
+                                ></use>
+                            </svg>
+                        </div>
+                        <p class="secure-payment__text">
+                            This is a secure 128-bit SSL encrypted payment
+                        </p>
+                    </div>
+                    <!-- – Credit Card -->
+                    <form class="form form--payment u-mb-30" action="">
+                        <label class="form__label" for="card--name"
+                            >Cardholder Name</label
+                        >
+                        <input
+                            class="form__input form__input--card-name u-mb-20"
+                            id="card--name"
+                            type="text"
+                            placeholder="Name as it appears on your card"
+                        />
+
+                        <label class="form__label" for="card--number"
+                            >Card Number</label
+                        >
+                        <input
+                            class="form__input form__input--card-number u-mb-20"
+                            id="card--number"
+                            type="text"
+                            placeholder="XXXX XXXX XXXX XXXX XXXX"
+                        />
+
+                        <label class="form__label" for="card--date"
+                            >Expire Date</label
+                        >
+                        <input
+                            class="form__input form__input--card-date"
+                            id="card--date"
+                            type="text"
+                            placeholder="MM / YY"
+                        />
+
+                        <label class="form__label" for="card--code"
+                            >Security Code</label
+                        >
+                        <input
+                            class="form__input form__input--card-code"
+                            id="card--code"
+                            type="text"
+                        />
+                    </form>
+
+                    <!-- – Button Billling -->
+                    <button class="btn btn--pay" id="btn--pay">
+                        Pay Securely
+                    </button>
+                </div>
+            </section>
+
+            <!-- • Summary -->
+            <section class="section-right">
+                <div class="summary-header flex-box u-mb-15">
+                    <h3 class="heading-tertiary">Order Summary</h3>
+                    <a
+                        href="#"
+                        class="summary-header__link"
+                        id="link--edit-order"
+                        >edit order</a
+                    >
+                </div>
+                <!-- – Product Box -->
+                <div class="product-box u-mb-10">
+                    <div class="product">
+                        <div class="product__img">
+                            <img src="img/boots.webp" alt="Product image" />
+                        </div>
+                        <p class="product__name">The Chelsea Boot</p>
+                        <span class="product__price">$235</span>
+                        <p class="product__design">Black</p>
+                        <p class="product__count">
+                            Quantity: <span class="product__n">1</span>
+                        </p>
+                    </div>
+                    <div class="product">
+                        <div class="product__img">
+                            <img src="img/backpack.webp" alt="Product image" />
+                        </div>
+                        <p class="product__name">The Twill Snap Backpack</p>
+                        <span class="product__price">$65</span>
+                        <p class="product__design">
+                            Reverse Denim + Brown leather
+                        </p>
+                        <p class="product__count">
+                            Quantity: <span class="product__n">1</span>
+                        </p>
+                    </div>
+                    <div class="product">
+                        <div class="product__img">
+                            <img src="img/bag.webp" alt="Product image" />
+                        </div>
+                        <p class="product__name">The Twill Zip Tote</p>
+                        <span class="product__price">$48</span>
+                        <p class="product__design">
+                            Reverse Denim + Black leather
+                        </p>
+                        <p class="product__count">
+                            Quantity: <span class="product__n">1</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- – Total Box -->
+                <div class="total-box">
+                    <div class="subtotal u-mb-15">
+                        <p class="subtotal__name">Subtotal</p>
+                        <span class="subtotal__price">$398</span>
+                        <p class="subtotal__name">Shipping</p>
+                        <span class="subtotal__price">Free</span>
+                        <p class="subtotal__name">Taxes</p>
+                        <span class="subtotal__price">$12.12</span>
+                    </div>
+                    <div class="total flex-box">
+                        <p class="total__name">Total</p>
+                        <span class="total__price">$410.12</span>
+                    </div>
+                </div>
+
+                <p class="conditions">
+                    All purchases are subject to our
+                    <a href="#" class="conditions__link"
+                        >Terms and conditions.</a
+                    >
+                </p>
+            </section>
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+</html>
